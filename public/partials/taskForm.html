@@ -1,0 +1,12 @@
+<div id="mainDiv">
+    <div id="container">
+    	<a href="#!/welcome"><i class="material-icons">arrow_back</i> Go back</a>
+        <h3>TODO LIST</h3>
+        <p>A place to store the things to do!</p>
+        <form ng-submit="$ctrl.updateInfo($ctrl.addNewItem)">
+            <task-list todo-list="$ctrl.todoList"></task-list>
+            <input type="text" name="" ng-model="$ctrl.item" placeholder="Add your to-do">
+            <button ng-click = "$ctrl.addItem($ctrl.item);" id="saveItemButton">Save Item To List</button>
+        </form>
+    </div>
+</div>

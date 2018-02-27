@@ -1,0 +1,6 @@
+<input type="text" name="FilterInput" ng-model="filterText" placeholder="Filter Your to-dos!">
+<ol>
+    <li hover-state ng-repeat="item in $ctrl.todoList | filter: filterText | orderBy">{{item}}
+        <button ng-click="$ctrl.removeItem($index)" type="button"><i class="material-icons">close</i></button>
+    </li>
+</ol>
